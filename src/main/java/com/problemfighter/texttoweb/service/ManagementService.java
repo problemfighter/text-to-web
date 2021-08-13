@@ -32,4 +32,8 @@ public class ManagementService {
     public String dashboard() {
         return render("dashboard");
     }
+
+    public String editor() {
+        return render("editor");
+    }
 }
