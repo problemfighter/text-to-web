@@ -8,6 +8,7 @@
 
     <script src="/internal-asset/js/jquery-context-menu/jquery.contextMenu.min.js"></script>
     <script src="/internal-asset/js/jquery-context-menu/jquery.ui.position.min.js"></script>
+    <script src="/internal-asset/js/lib/avro-v1.1.4.min.js"></script>
     <link rel="stylesheet" href="/internal-asset/js/jquery-context-menu/jquery.contextMenu.min.css" />
 
     <link rel="stylesheet" href="/internal-asset/css/bootstrap.min.css" />
@@ -26,6 +27,7 @@
                 display.html(html);
             });
 
+            jQuery("#text").avro({'bangla':false});
 
             $.contextMenu({
                 selector: '.context-menu-one',
@@ -140,6 +142,64 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">New...</a></li>
+                                    <li><a href="#" class="link-dark rounded">Profile</a></li>
+                                    <li><a href="#" class="link-dark rounded">Settings</a></li>
+                                    <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">New...</a></li>
+                                    <li><a href="#" class="link-dark rounded">Profile</a></li>
+                                    <li><a href="#" class="link-dark rounded">Settings</a></li>
+                                    <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed">
+                                Account
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -149,14 +209,16 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="row">
                     <div class="col-6">
-                        <textarea id="text" style="min-width: 100%; height: 100%;" rows="15"></textarea>
+                       <div class="container-flute" style="height: 100%;">
+                           <textarea id="text" style="min-width: 100%; height: 100%;" rows="15"></textarea>
+                       </div>
                     </div>
                     <div class="col-6 asciidoctor-content">
                         <div id="display"></div>
                     </div>
                 </div>
 
-<#--                <span class="context-menu-one btn btn-neutral" data-action="xyz">right click me</span>-->
+                <span class="context-menu-one btn btn-neutral" data-action="xyz">right click me</span>
 <#--                <span class="context-menu-one btn btn-neutral" data-action="abc">right click me</span>-->
             </main>
         </div>
